@@ -3,7 +3,7 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 #include "include/player.h"
-#include "stickman.h"
+#include "include/stickman.h"
 
 // Fonctions du menu
 void afficher_landing_page(SDL_Renderer *renderer, int wScreen, int hScreen);
