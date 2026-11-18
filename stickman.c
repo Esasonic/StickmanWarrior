@@ -1,4 +1,4 @@
-#include "stickman.h"
+#include "include/stickman.h"
 
 void render_stickman(SDL_Renderer *renderer, float x, float y){
 	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
