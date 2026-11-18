@@ -9,7 +9,6 @@
 static SDL_Window *window = NULL;
 SDL_Renderer * first_context;
 
-<<<<<<< Updated upstream
 int wScreen, hScreen;
 
 float stickman_x;
@@ -26,10 +25,8 @@ int initialized = 0;
 
 
   
-=======
 Player player;
 
->>>>>>> Stashed changes
 //initiialisation
 SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[]){
   SDL_SetAppMetadata("StickmanWarrior", "1", "ESGI_HOMEWORK");
@@ -74,7 +71,7 @@ SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event){
 
 
   if(event->type == SDL_EVENT_KEY_DOWN){
-    if(event->key.key == SDLK_N){
+    if(event->key.key == SDLK_ESCAPE){
       return SDL_APP_SUCCESS;
     }
       if(event->key.key == SDLK_D) go_right = true;
