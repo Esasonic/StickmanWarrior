@@ -2,7 +2,7 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 
-#include "rectangle.h"
+#include "stickman.h"
 
 //variables globales
 static SDL_Window *window = NULL;
