@@ -1,6 +1,7 @@
 #define SDL_MAIN_USE_CALLBACKS 1
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
+#include "include/player.h"
 
 #include "stickman.h"
 
@@ -8,6 +9,7 @@
 static SDL_Window *window = NULL;
 SDL_Renderer * first_context;
 
+<<<<<<< Updated upstream
 int wScreen, hScreen;
 
 float stickman_x;
@@ -24,13 +26,18 @@ int initialized = 0;
 
 
   
+=======
+Player player;
+
+>>>>>>> Stashed changes
 //initiialisation
 SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[]){
   SDL_SetAppMetadata("StickmanWarrior", "1", "ESGI_HOMEWORK");
   if(!SDL_Init(SDL_INIT_VIDEO)) return SDL_APP_FAILURE;
-  SDL_Window * window = SDL_CreateWindow("StickmanWarrior", 500, 500, SDL_WINDOW_FULLSCREEN);
+  window = SDL_CreateWindow("StickmanWarrior", 500, 500, SDL_WINDOW_FULLSCREEN);
   first_context = SDL_CreateRenderer(window, NULL);
 
+  initPlayer(&player);
 
   return SDL_APP_CONTINUE;
 }
