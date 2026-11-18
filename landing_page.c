@@ -11,14 +11,6 @@ static SDL_FRect bouton_demarrer(int largeur, int hauteur)
 }
 
 
-static SDL_FRect bouton_option(int largeur, int hauteur)
-{
-    SDL_FRect bouton = {(largeur - 240.0f) / 2.0f, hauteur * 0.20 200f, 50f};
-    return bouton;
-}
-
-
-
 void afficher_landing_page(SDL_Renderer *renderer, int largeur, int hauteur)
 {
     SDL_SetRenderDrawColor(renderer, 15, 18, 28, 255);
